@@ -1,0 +1,12 @@
+import random
+
+# Define the four test lists
+level1_list = [1, 2, 3, 4]
+level2_list = ['a', 'b', 'c','d']
+level3_list = [99, 88, 77,66]
+level4_list = ["1$","2&","3%","4©"]
+
+lists=[level1_list,level2_list,level3_list,level4_list]
+for i in range(4):
+    r=[random.choice(lst)for lst in lists]
+    print(f"team{i+1}+{r}")
